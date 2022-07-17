@@ -1,0 +1,4 @@
+# Real cases. Real people. Judge Judy.
+
+User-agent: *
+Disallow: /
