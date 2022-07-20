@@ -13,7 +13,7 @@ var seven;
 var eight;
 var n;
 
-function runGenerator(){
+function runGenerator(){ //skipcq: JS-0128
   clear();
   gen();
   getECost();
