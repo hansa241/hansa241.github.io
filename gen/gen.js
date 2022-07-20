@@ -13,12 +13,28 @@ var seven;
 var eight;
 var n;
 
-function runGenerator(){ //skipcq: JS-0128
-  clear();
-  gen();
-  getECost();
-  setLink();
-};
+function check(Q){
+  n = Math.floor((Math.random() * 104));
+  for (var i = 0; i < Q; i++) {
+    while(cardNames[n] === usedNames[i]){
+      n = Math.floor((Math.random() * 104));
+    }
+  }
+}
+
+function clear(){
+  usedNames = [];
+  usedNumbers = [];
+  one = null;
+  two = null;
+  three = null;
+  four = null;
+  five = null;
+  six = null;
+  seven = null;
+  eight = null;
+  n = null;
+}
 
 function gen() {
   n = Math.floor((Math.random() * 104));
@@ -61,29 +77,6 @@ function gen() {
   document.getElementById("card6").innerHTML = six;
   document.getElementById("card7").innerHTML = seven;
   document.getElementById("card8").innerHTML = eight;
-}
-
-function check(Q){
-  n = Math.floor((Math.random() * 104));
-  for (var i = 0; i < Q; i++) {
-    while(cardNames[n] === usedNames[i]){
-      n = Math.floor((Math.random() * 104));
-    }
-  }
-}
-
-function clear(){
-  usedNames = [];
-  usedNumbers = [];
-  one = null;
-  two = null;
-  three = null;
-  four = null;
-  five = null;
-  six = null;
-  seven = null;
-  eight = null;
-  n = null;
 }
 
 function getECost(){
@@ -139,4 +132,9 @@ function setLink(){
   document.getElementById("link").innerHTML = linkVar;
 }
 
-
+function runGenerator(){ //skipcq: JS-0128
+  clear();
+  gen();
+  getECost();
+  setLink();
+};
