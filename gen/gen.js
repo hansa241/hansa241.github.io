@@ -12,7 +12,6 @@ var six;
 var seven;
 var eight;
 var n;
-var br = "\n";
 
 function runGenerator(){
   clear();
