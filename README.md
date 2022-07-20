@@ -1,4 +1,4 @@
 # Hello to whom it may concern!
 
-Come pay me a visit!
-[https://drakeiscanadian.me](https://drakeiscanadian.me)
+Clash Royale Deck Generator --->
+[https://drakeiscanadian.me/gen/](https://drakeiscanadian.me/gen/)
