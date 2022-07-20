@@ -75,15 +75,15 @@ function check(Q){
 function clear(){
   usedNames = [];
   usedNumbers = [];
-  one = undefined;
-  two = undefined;
-  three = undefined;
-  four = undefined;
-  five = undefined;
-  six = undefined;
-  seven = undefined;
-  eight = undefined;
-  n = undefined;
+  one = null;
+  two = null;
+  three = null;
+  four = null;
+  five = null;
+  six = null;
+  seven = null;
+  eight = null;
+  n = null;
 }
 
 function getECost(){
