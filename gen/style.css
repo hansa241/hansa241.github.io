@@ -4,3 +4,6 @@
 #generateBtn {
     font-family: 'Courier New', Courier, monospace;
 }
+#avgECost {
+    color: deeppink;
+}
