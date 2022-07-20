@@ -124,7 +124,7 @@ function setLink(){
   var c6;
   var c7;
   var c8;
-  var link;
+  var linkVar;
   var s = ";";
   
   c1 = codes[usedNumbers[0]];
