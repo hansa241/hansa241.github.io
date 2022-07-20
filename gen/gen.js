@@ -66,7 +66,7 @@ function gen() {
 function check(Q){
   n = Math.floor((Math.random() * 104));
   for (var i = 0; i < Q; i++) {
-    while(cardNames[n] == usedNames[i]){
+    while(cardNames[n] === usedNames[i]){
       n = Math.floor((Math.random() * 104));
     }
   }
