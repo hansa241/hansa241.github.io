@@ -14,10 +14,10 @@ var eight;
 var n;
 
 function check(Q){
-  n = Math.floor((Math.random() * 104));
+  n = Math.floor((Math.random() * 107));
   for (var i = 0; i < Q; i++) {
     while(cardNames[n] === usedNames[i]){
-      n = Math.floor((Math.random() * 104));
+      n = Math.floor((Math.random() * 107));
     }
   }
 }
@@ -37,7 +37,7 @@ function clear(){
 }
 
 function gen() {
-  n = Math.floor((Math.random() * 104));
+  n = Math.floor((Math.random() * 107));
   one = cardNames[n];
   usedNames.push(one);
   usedNumbers.push(n);
