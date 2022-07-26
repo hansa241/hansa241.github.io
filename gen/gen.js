@@ -22,6 +22,21 @@ function check(Q){
   }
 }
 
+function checkChampions(){
+  var count = 0;
+  for (var i = 0; i < usedNames.length; i++) {
+    if(usedNames[i] === "Golden Knight" || usedNames[i] === "Archer Queen" || usedNames[i] === "Skeleton King" || usedNames[i] === "Mighty Miner"){
+      count++;
+    }
+  }
+  if(count >= 2){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+
 function clear(){
   usedNames = [];
   usedNumbers = [];
@@ -135,6 +150,9 @@ function setLink(){
 function runGenerator(){ //skipcq: JS-0128
   clear();
   gen();
+  if (checkChampions()){
+    runGenerator();
+  }
   getECost();
   setLink();
 };
