@@ -15,7 +15,7 @@ var n;
 
 function check(Q){
   n = Math.floor((Math.random() * 107));
-  for (var i = 0; i < Q; i++) {
+  for (let i = 0; i < Q; i++) {
     while(cardNames[n] === usedNames[i]){
       n = Math.floor((Math.random() * 107));
     }
@@ -23,8 +23,8 @@ function check(Q){
 }
 
 function checkChampions(){
-  var count = 0;
-  for (var i = 0; i < usedNames.length; i++) {
+  let count = 0;
+  for (let i = 0; i < usedNames.length; i++) {
     if(usedNames[i] === "Golden Knight" || usedNames[i] === "Archer Queen" || usedNames[i] === "Skeleton King" || usedNames[i] === "Mighty Miner"){
       count++;
     }
@@ -93,16 +93,16 @@ function gen() {
 }
 
 function getECost(){
-  var e1;
-  var e2;
-  var e3;
-  var e4;
-  var e5;
-  var e6;
-  var e7;
-  var e8;
-  var sum;
-  var avg;
+  let e1;
+  let e2;
+  let e3;
+  let e4;
+  let e5;
+  let e6;
+  let e7;
+  let e8;
+  let sum;
+  let avg;
   
   e1 = eCost[usedNumbers[0]];
   e2 = eCost[usedNumbers[1]];
@@ -121,15 +121,15 @@ function getECost(){
 
 function setLink(){
   
-  var c1;
-  var c2;
-  var c3;
-  var c4;
-  var c5;
-  var c6;
-  var c7;
-  var c8;
-  var linkVar;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  let c6;
+  let c7;
+  let c8;
+  let linkVar;
   const s = ";";
   
   c1 = codes[usedNumbers[0]];
