@@ -3,15 +3,15 @@ const codes = [26000010, 26000031, 26000030, 26000084, 26000002, 26000019, 26000
 const eCost = [1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7, 1, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 6, 7, 9, 1, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 7, 8, 8, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 6, 7, 7, 4, 4, 5, 4];
 var usedNumbers = [];
 var usedNames = [];
-var one;
-var two;
-var three;
-var four;
-var five;
-var six;
-var seven;
-var eight;
-var n;
+var one = null;
+var two = null;
+var three = null;
+var four = null;
+var five = null;
+var six = null;
+var seven = null;
+var eight = null;
+var n = null;
 
 function check(Q){
   n = Math.floor((Math.random() * 107));
