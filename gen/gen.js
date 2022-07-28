@@ -120,7 +120,7 @@ function setLink(){
 
   const sc = ";";
 
-  const linkVar = "https://link.clashroyale.com/deck/en?deck=" + c1 + sc + c2 + sc + c3 + sc + c4 + sc + c5 + sc + c6 + sc + c7 + sc + c8;
+  const linkVar = `https://link.clashroyale.com/deck/en?deck=${c1 + sc + c2 + sc + c3 + sc + c4 + sc + c5 + sc + c6 + sc + c7 + sc + c8}`;
   document.getElementById("link").innerHTML = linkVar;
 }
 
