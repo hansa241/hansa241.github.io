@@ -93,55 +93,34 @@ function gen() {
 }
 
 function getECost(){
-  let e1;
-  let e2;
-  let e3;
-  let e4;
-  let e5;
-  let e6;
-  let e7;
-  let e8;
-  let sum;
-  let avg;
+  const e1 = eCost[usedNumbers[0]];
+  const e2 = eCost[usedNumbers[1]];
+  const e3 = eCost[usedNumbers[2]];
+  const e4 = eCost[usedNumbers[3]];
+  const e5 = eCost[usedNumbers[4]];
+  const e6 = eCost[usedNumbers[5]];
+  const e7 = eCost[usedNumbers[6]];
+  const e8 = eCost[usedNumbers[7]];
   
-  e1 = eCost[usedNumbers[0]];
-  e2 = eCost[usedNumbers[1]];
-  e3 = eCost[usedNumbers[2]];
-  e4 = eCost[usedNumbers[3]];
-  e5 = eCost[usedNumbers[4]];
-  e6 = eCost[usedNumbers[5]];
-  e7 = eCost[usedNumbers[6]];
-  e8 = eCost[usedNumbers[7]];
-  
-  sum = e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8;
-  avg = sum / 8;
+  const sum = e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8;
+  const avg = sum / 8;
   
   document.getElementById("avgECost").innerHTML = avg.toFixed(1);
 }
 
 function setLink(){
-  
-  let c1;
-  let c2;
-  let c3;
-  let c4;
-  let c5;
-  let c6;
-  let c7;
-  let c8;
-  let linkVar;
+  const c1 = codes[usedNumbers[0]];
+  const c2 = codes[usedNumbers[1]];
+  const c3 = codes[usedNumbers[2]];
+  const c4 = codes[usedNumbers[3]];
+  const c5 = codes[usedNumbers[4]];
+  const c6 = codes[usedNumbers[5]];
+  const c7 = codes[usedNumbers[6]];
+  const c8 = codes[usedNumbers[7]];
+
   const s = ";";
-  
-  c1 = codes[usedNumbers[0]];
-  c2 = codes[usedNumbers[1]];
-  c3 = codes[usedNumbers[2]];
-  c4 = codes[usedNumbers[3]];
-  c5 = codes[usedNumbers[4]];
-  c6 = codes[usedNumbers[5]];
-  c7 = codes[usedNumbers[6]];
-  c8 = codes[usedNumbers[7]];
-  
-  linkVar = "https://link.clashroyale.com/deck/en?deck=" + c1 + s + c2 + s + c3 + s + c4 + s + c5 + s + c6 + s + c7 + s + c8;
+
+  const linkVar = "https://link.clashroyale.com/deck/en?deck=" + c1 + s + c2 + s + c3 + s + c4 + s + c5 + s + c6 + s + c7 + s + c8;
   document.getElementById("link").innerHTML = linkVar;
 }
 
